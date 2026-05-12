@@ -1,0 +1,26 @@
+# Data files — never commit patient data to GitHub
+data_deidentified.csv
+*.csv
+*.xlsx
+*.xls
+
+# Secrets
+.streamlit/secrets.toml
+secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models
+*.pkl
+*.joblib
+*.h5
