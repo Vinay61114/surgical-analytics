@@ -534,7 +534,9 @@ with tabs[4]:
                       annotation_text="20% threshold")
         fig.add_vline(x=et_val, line_dash="dot", line_color="#7F77DD", line_width=1.5,
                       annotation_text=f"Current: {et_val} min")
-        fig.update_layout(**plotly_defaults(), height=240,
+        fig.update_layout(plot_bgcolor="white", paper_bgcolor="white",
+                          font=dict(family="Arial", size=11, color="#333333"),
+                          height=240,
                           xaxis_title="Exposure time (min)",
                           yaxis_title="Complication probability (%)",
                           yaxis_range=[0, 100], showlegend=False,
